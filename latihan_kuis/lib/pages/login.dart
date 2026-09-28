@@ -25,9 +25,9 @@ class _LoginPageState extends State<LoginPage> {
         isLoggedin = true;
       });
 
-      Navigator.push(
+      Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Home()),
+        MaterialPageRoute(builder: (context) => const Home()),
       );
 
       ScaffoldMessenger.of(context).showSnackBar(
@@ -57,19 +57,45 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Login Page")),
+      appBar: AppBar(
+        title: const Text("Login"),
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
+      ),
       body: Center(
-        child: Padding(
-          padding: EdgeInsets.all(8),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(24.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Login Page"),
-              SizedBox(height: 20),
+              const Icon(
+                Icons.account_circle,
+                size: 80,
+                color: Colors.green,
+              ),
+              const SizedBox(height: 24),
               _usernameField(_usernameController),
+              const SizedBox(height: 12),
               _passwordField(_passwordController),
-              SizedBox(height: 20),
-              ElevatedButton(onPressed: _login, child: Text("Login")),
+              const SizedBox(height: 20),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: _login,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: const Text(
+                    "Login",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
@@ -79,33 +105,37 @@ class _LoginPageState extends State<LoginPage> {
 }
 
 Widget _usernameField(TextEditingController usernameController) {
-  return Container(
-    child: TextField(
-      controller: usernameController,
-      enabled: true,
-      decoration: InputDecoration(
-        hintText: "username kamu",
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-          borderSide: BorderSide(color: Colors.blue),
-        ),
+  return TextField(
+    controller: usernameController,
+    enabled: true,
+    decoration: const InputDecoration(
+      hintText: "username kamu",
+      prefixIcon: Icon(Icons.person, color: Colors.green),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+        borderSide: BorderSide(color: Colors.green, width: 2),
       ),
     ),
   );
 }
 
 Widget _passwordField(TextEditingController controller) {
-  return Container(
-    child: TextField(
-      controller: controller,
-      obscureText: true,
-      enabled: true,
-      decoration: InputDecoration(
-        hintText: "password kamu",
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-          borderSide: BorderSide(color: Colors.blue),
-        ),
+  return TextField(
+    controller: controller,
+    obscureText: true,
+    enabled: true,
+    decoration: const InputDecoration(
+      hintText: "password kamu",
+      prefixIcon: Icon(Icons.lock, color: Colors.green),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+        borderSide: BorderSide(color: Colors.green, width: 2),
       ),
     ),
   );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'detail.dart';
+import 'login.dart';
 import '../models/bookModels.dart';
 
 class Home extends StatelessWidget {
@@ -10,7 +11,21 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Daftar Buku"),
+        title: const Text("Library Page"),
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Logout',
+            onPressed: () {
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => const LoginPage()),
+                (route) => false,
+              );
+            },
+          ),
+        ],
       ),
       body: ListView.builder(
         itemCount: bookList.length,
@@ -19,7 +34,7 @@ class Home extends StatelessWidget {
             title: Text(bookList[index].title),
             subtitle: Text(bookList[index].author),
             leading: Image.network(bookList[index].imageUrl),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
               Navigator.push(
                 context,
@@ -30,7 +45,7 @@ class Home extends StatelessWidget {
             },
           );
         },
-      )
+      ),
     );
   }
 }

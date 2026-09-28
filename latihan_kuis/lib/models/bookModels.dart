@@ -30,30 +30,26 @@ List<BookModel> bookList = [
     title: "Harry Potter and the Philosopher's Stone",
     author: "J.K. Rowling",
     year: 1997,
-    description:
-        "Harry Potter is an ordinary boy who lives with his unpleasant aunt, uncle, and cousin. On his eleventh birthday, Harry discovers that he is actually a wizard and is invited to attend Hogwarts School of Witchcraft and Wizardry. There, he begins a magical adventure and discovers the truth about his past.",
+    description: "Harry Potter is an ordinary boy who lives with his unpleasant aunt, uncle, and cousin. On his eleventh birthday, Harry discovers that he is actually a wizard and is invited to attend Hogwarts School of Witchcraft and Wizardry. There, he begins a magical adventure and discovers the truth about his past.",
     genre: "Fantasy",
     publisher: "Bloomsbury",
     pages: 223,
     rating: 4.8,
     imageUrl:
         "https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg",
-    bookUrl:
-        "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone",
+    bookUrl: "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone",
   ),
 
   BookModel(
     title: "The Hobbit",
     author: "J.R.R. Tolkien",
     year: 1937,
-    description:
-        "Bilbo Baggins is a peaceful hobbit whose life changes when the wizard Gandalf and a group of dwarves arrive at his home. They invite Bilbo to join an adventure to reclaim the dwarves' homeland and treasure from the dragon Smaug.",
+    description: "Bilbo Baggins is a peaceful hobbit whose life changes when the wizard Gandalf and a group of dwarves arrive at his home. They invite Bilbo to join an adventure to reclaim the dwarves' homeland and treasure from the dragon Smaug.",
     genre: "Fantasy",
     publisher: "George Allen & Unwin",
     pages: 310,
     rating: 4.7,
-    imageUrl:
-        "https://images-na.ssl-images-amazon.com/images/I/91b1Y3G2QJL.jpg",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vgmTuwcYJUO984FGxGZ4M6nMV9Q7cCMKWug_G20h2w&s=10",
     bookUrl: "https://en.wikipedia.org/wiki/The_Hobbit",
   ),
 
@@ -61,14 +57,12 @@ List<BookModel> bookList = [
     title: "Pride and Prejudice",
     author: "Jane Austen",
     year: 1813,
-    description:
-        "The story follows Elizabeth Bennet as she navigates relationships, family expectations, and social pressures in nineteenth-century England. Her first impressions of the wealthy and seemingly arrogant Mr. Darcy gradually change as they learn more about each other.",
+    description: "The story follows Elizabeth Bennet as she navigates relationships, family expectations, and social pressures in nineteenth-century England. Her first impressions of the wealthy and seemingly arrogant Mr. Darcy gradually change as they learn more about each other.",
     genre: "Romance",
     publisher: "T. Egerton",
     pages: 432,
     rating: 4.6,
-    imageUrl:
-        "https://images-na.ssl-images-amazon.com/images/I/71Q1tP4e4tL.jpg",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjgXHOm-DPtPyEa2Bz0N56sBE3Ly8VYErwhEK_yHHpw&s=10",
     bookUrl: "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
   ),
 
@@ -76,8 +70,7 @@ List<BookModel> bookList = [
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
     year: 1925,
-    description:
-        "Nick Carraway moves to Long Island and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Through Gatsby's lavish parties and his desire to reunite with Daisy Buchanan, the novel explores ambition, love, wealth, and the American Dream.",
+    description: "Nick Carraway moves to Long Island and becomes fascinated by his mysterious and wealthy neighbor, Jay Gatsby. Through Gatsby's lavish parties and his desire to reunite with Daisy Buchanan, the novel explores ambition, love, wealth, and the American Dream.",
     genre: "Classic",
     publisher: "Charles Scribner's Sons",
     pages: 180,
@@ -91,8 +84,7 @@ List<BookModel> bookList = [
     title: "1984",
     author: "George Orwell",
     year: 1949,
-    description:
-        "Winston Smith lives in a dystopian society controlled by the Party, where citizens are constantly monitored and independent thought is forbidden. As Winston secretly questions the system, he begins a dangerous journey against the oppressive government.",
+    description: "Winston Smith lives in a dystopian society controlled by the Party, where citizens are constantly monitored and independent thought is forbidden. As Winston secretly questions the system, he begins a dangerous journey against the oppressive government.",
     genre: "Dystopian",
     publisher: "Secker & Warburg",
     pages: 328,
@@ -106,8 +98,7 @@ List<BookModel> bookList = [
     title: "The Alchemist",
     author: "Paulo Coelho",
     year: 1988,
-    description:
-        "Santiago, a young shepherd from Spain, dreams of finding a hidden treasure near the Egyptian pyramids. His journey takes him across the desert, where he meets different people and learns about following dreams, discovering purpose, and listening to his heart.",
+    description: "Santiago, a young shepherd from Spain, dreams of finding a hidden treasure near the Egyptian pyramids. His journey takes him across the desert, where he meets different people and learns about following dreams, discovering purpose, and listening to his heart.",
     genre: "Adventure",
     publisher: "HarperCollins",
     pages: 208,
@@ -121,14 +112,13 @@ List<BookModel> bookList = [
     title: "To Kill a Mockingbird",
     author: "Harper Lee",
     year: 1960,
-    description:
-        "Scout Finch grows up in a small Alabama town during the 1930s. Through her father's defense of a Black man accused of a serious crime, Scout begins to understand prejudice, justice, compassion, and the complexities of society.",
+    description: "Scout Finch grows up in a small Alabama town during the 1930s. Through her father's defense of a Black man accused of a serious crime, Scout begins to understand prejudice, justice, compassion, and the complexities of society.",
     genre: "Historical Fiction",
     publisher: "J. B. Lippincott & Co.",
     pages: 281,
     rating: 4.8,
     imageUrl:
-        "https://images-na.ssl-images-amazon.com/images/I/81OdwZQZ4YL.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfpSuaoz0rybWVSza1j4ZPYHzcb74ZLsE92u10mjhREw&s=10",
     bookUrl: "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird",
   ),
 
@@ -136,14 +126,13 @@ List<BookModel> bookList = [
     title: "The Little Prince",
     author: "Antoine de Saint-Exupéry",
     year: 1943,
-    description:
-        "A pilot stranded in the Sahara Desert meets a mysterious young prince from another planet. Through their conversations, the prince shares stories about his travels and the unusual people he has encountered, offering lessons about friendship, love, and what truly matters in life.",
+    description: "A pilot stranded in the Sahara Desert meets a mysterious young prince from another planet. Through their conversations, the prince shares stories about his travels and the unusual people he has encountered, offering lessons about friendship, love, and what truly matters in life.",
     genre: "Fiction",
     publisher: "Reynal & Hitchcock",
     pages: 96,
     rating: 4.9,
     imageUrl:
-        "https://images-na.ssl-images-amazon.com/images/I/71OZY035QTL.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqgaE_Q9sAMWzpKqHqp-IDpXQZvCWtkFY0yJhSmVcFQ&s=10",
     bookUrl: "https://en.wikipedia.org/wiki/The_Little_Prince",
   ),
 ];

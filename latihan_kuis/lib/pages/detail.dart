@@ -12,7 +12,7 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(_bookModel.title),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
       ),
 
       body: SingleChildScrollView(

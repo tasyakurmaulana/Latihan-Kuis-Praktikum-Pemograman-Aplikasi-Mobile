@@ -7,7 +7,7 @@ class User {
 }
 
 List<User> users = [
-   User(username: "maul", password: "maul123", nama: "maul"),
+   User(username: "maul@gmail.com", password: "maul123", nama: "maul"),
 ];
 
 
